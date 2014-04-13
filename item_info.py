@@ -5,42 +5,42 @@ melee_item_list = [
         'dmg_type': 'slashing',
         'min_dmg': 1,
         'max_dmg': 6,
-        'speed': 5
+        'hands': 1
     },
     {
         'name': 'Axe',
         'dmg_type': 'slashing',
         'min_dmg': 3,
         'max_dmg': 8,
-        'speed': 3
+        'hands': 1
     },
     {
         'name': 'Hammer',
         'dmg_type': 'bludgeoning',
         'min_dmg': 5,
         'max_dmg': 10,
-        'speed': 1
+        'hands': 1
     },
     {
         'name': 'Mace',
         'dmg_type': 'bludgeoning',
         'min_dmg': 2,
         'max_dmg': 7,
-        'speed': 2
+        'hands': 1
     },
     {
         'name': 'Dagger',
         'dmg_type': 'peircing',
         'min_dmg': 1,
         'max_dmg': 4,
-        'speed': 10
+        'hands': 1
     },
     {
         'name': 'Foil',
         'dmg_type': 'peircing',
         'min_dmg': 2,
         'max_dmg': 4,
-        'speed': 8
+        'hands': 2
     }
 ]
 ranged_item_list = [
@@ -49,7 +49,7 @@ ranged_item_list = [
         'dmg_type': 'peircing',
         'min_dmg': 1,
         'max_dmg': 6,
-        'speed': 5
+        'hands': 2
     },
     {
         'name': 'Long Bow',
@@ -63,6 +63,21 @@ ranged_item_list = [
         'dmg_type': 'peircing',
         'min_dmg': 2,
         'max_dmg': 4,
-        'speed': 10
+        'hands': 1
+    }
+]
+
+item_list = [
+    {
+        'type': 'melee',
+        'list': melee_item_list,
+        'low_percent': 1,
+        'high_percent': 50
+    },
+    {
+        'type': 'ranged',
+        'list': ranged_item_list,
+        'low_percent': 51,
+        'high_percent': 100
     }
 ]
