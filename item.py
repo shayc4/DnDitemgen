@@ -1,12 +1,12 @@
 from item_info import *
 import random
 
-
+#takes roll and list returns item
 def percent_select_roll(roll, _list):
     for i in _list:
         if i['low_percent'] <= roll <= i['high_percent']:
-            selected_item_list = i
-    return selected_item_list
+            selected_item = i
+    return selected_item
 
 
 def create():
